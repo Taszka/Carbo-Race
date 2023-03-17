@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head>
-<title>Our Funky HTML Page</title>
+<title>Welcome Page</title>
 <meta name="description" content="Our first page">
 <meta name="keywords" content="html tutorial template">
 
@@ -24,25 +24,47 @@
   
 }
 
-.blank_wall_left {
+.blank_wall_left_background {
     background-image: url('/Carbo Race/Front/Models/Layer/blankwall_left.jpg');
     background-position: right;
-    float: left;
+    background-attachment: fixed;
+    width: 940px;
+    height: 1000px;
+    position: relative;
+    animation-name: TO_RIGHT;
+    animation-duration: 3s;  
+    animation-fill-mode: both;
+}
+.blank_wall_right_background {
+    background-image: url('/Carbo Race/Front/Models/Layer/blankwall_right.jpg');
+    background-position: left;
+    background-attachment: fixed;
+    width: 940px;
+    height: 1000px;
+    position: relative;
+    animation-name:TO_LEFT;
+    animation-duration: 3s;  
+    animation-fill-mode: both;
+}
+@keyframes TO_LEFT {
+  from {left: 0px;}
+  to {left: -200px;}
+}
+@keyframes TO_RIGHT {
+  from {left: 0px;}
+  to {left: 200px;}
+}
+.blank_wall_left {
+    background-image: url('/Carbo Race/Front/Models/Layer/blankwall_left.jpg');
+    float: right;
     width: 10%;
     height: 1000px;
-    overflow: hidden;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
-
 }
 .blank_wall_right {
     background-image: url('/Carbo Race/Front/Models/Layer/blankwall_right.jpg');
     float: left;
-    background-position: left;
     width: 10%;
     height: 1000px;
-    overflow: hidden;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
-
 }
 .game_window_background {
     background-image: url('/Carbo Race/Front/Models/Layer/main.jpg');
@@ -58,7 +80,6 @@
     float: left;
     overflow: hidden;
     position: relative;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(59, 58, 58) 0px 0px 0px 3px;
 }
 .centered {
   position: absolute;
@@ -319,9 +340,9 @@
 <header>
 </header>
 <section>
-    <div class="blank_wall_left">
-    .
-    </div>
+  <div class="blank_wall_left">
+    <div class="blank_wall_left_background"></div>
+  </div>
 
     <div class="game_window">
         <div class="game_window_background">
@@ -332,16 +353,14 @@
             </div>
             <div class = 'modeling_string'></div>
             <div class="start_string">
-              <a href="Front\HTML_Templates\Welcome_intro2.html">
-                <button class="button-start"><b><h1>START</h1></b></button>
-              </a>
+                <button class="button-start" role="button"><b><h1>START</h1></b></button>
             </div>
         </div>
     </div>
+
     <div class="blank_wall_right">
-        .
+      <div class="blank_wall_right_background"></div>
     </div>
 </section>
 </body>
 </html>
-
