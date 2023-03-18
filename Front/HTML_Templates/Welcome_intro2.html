@@ -20,20 +20,39 @@
     background-color: black;
 }
 .block_left {
+    background-image: url('/Carbo Race/Front/Models/Layer/blankwall_left.jpg');
     position: absolute;
+    background-position: right;
     right: 1;
-    width: 20%;
-    height: 900px;
-    background-color: rgb(250, 0, 0);
+    width: 50%;
+    height: 1000px;
+    animation-name: example_left;
+    animation-duration: 3s;
 }
+
+@keyframes example_left {
+  0%   { left:-30%; top:0px;}
+  100% { left:0px; top:0px;}
+}
+
 .block_right {
+    background-image: url('/Carbo Race/Front/Models/Layer/blankwall_right.jpg');
+    background-position: left;
     position: absolute;
     right: 0;
-    width: 20%;
-    height: 900px;
-    background-color: rgb(75, 204, 0);
+    width: 50%;
+    height: 1000px;
+    animation-name: example_right;
+    animation-duration: 3s;
+}
+@keyframes example_right {
+  0%   { right:-30%; top:0px;}
+  100% { right:0px; top:0px;}
+
 }
 .strip_left {
+    background-image: url('/Carbo Race/Front/Models/Layer/blankwall_right.jpg');
+    background-position: left;
     position: absolute;
     right: 1;
     width: 20%;
@@ -41,6 +60,8 @@
     background-color: rgb(86, 4, 226);
 }
 .strip_right {
+    background-image: url('/Carbo Race/Front/Models/Layer/blankwall_right.jpg');
+    background-position: left;
     position: absolute;
     right: 0;
     width: 20%;
@@ -49,12 +70,40 @@
 }
 .mid {
     position: absolute;
-    left: 0; 
-    right: 0; 
-    width: 80%;
+    left:20%;
+    width: 60%;
     height: 1000px;
+    overflow: hidden;
     background-color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(59, 58, 58) 0px 0px 0px 3px;
 }
+.game_window_background {
+    background-image: url('/Carbo Race/Front/Models/Layer/main.jpg');
+    background-attachment: fixed;
+    width: 3000px;
+    height:1000px;
+    float: left;
+    animation: slide 100s linear infinite;
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+@keyframes slide {
+  0% {
+    transform: translate(0);
+  }
+  100% {
+    transform: translate(-1080px); /* The image width */
+  }
+}
+
+
+
+
 </style>
 
 </head>
@@ -70,7 +119,9 @@
 <div class="base">
 
 
-    <div class="mid"></div>
+    <div class="mid">
+        <div class="game_window_background"></div>
+    </div>
     <div class="strip_left"></div>
     <div class="strip_right"></div>
 
