@@ -1,2 +1,2 @@
 # Carbo-Race
- Browser Game in PHP
+Here will stand a browser game in Cyberpunk vibe!
