@@ -19,6 +19,7 @@ html, body {
     height: 100%;
     animation-name: example_left;
     animation-duration: 3s;
+    animation-play-state: paused;
 }
 @keyframes example_left {
     0%   { left:-100%; top:0px;}
@@ -33,6 +34,8 @@ html, body {
     height: 100%;
     animation-name: example_right;
     animation-duration: 3s;
+    animation-play-state: paused;
+
 }
 @keyframes example_right {
   0%   { right:-100%; top:0px;}
