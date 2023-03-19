@@ -10,8 +10,8 @@ html, body {
     overflow: hidden;
 }
 /* Definiujemy styl animacji */
-#block_left {
-    background-image: url('/Carbo Race/Front/Models/Layer/blankwall_left.jpg');
+.block_left {
+    background-image: url('../../Models/Layer/blankwall_left.jpg');
     position: absolute;
     background-position: right;
     right: 1;
@@ -19,14 +19,13 @@ html, body {
     height: 100%;
     animation-name: example_left;
     animation-duration: 3s;
-    animation-play-state: paused;
 }
 @keyframes example_left {
     0%   { left:-100%; top:0px;}
     100% { left:0px; top:0px;}
 }
-#block_right {
-    background-image: url('/Carbo Race/Front/Models/Layer/blankwall_right.jpg');
+.block_right {
+    background-image: url('../../Models/Layer/blankwall_right.jpg');
     background-position: left;
     position: absolute;
     right: 0;
@@ -48,7 +47,7 @@ html, body {
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(59, 58, 58) 0px 0px 0px 3px;
 }
 .game_window_background {
-    background-image: url('/Carbo Race/Front/Models/Layer/main.jpg');
+    background-image: url('../../Models/Layer/main.jpg');
     background-attachment: fixed;
     width: 3000px;
     height: 100%;
