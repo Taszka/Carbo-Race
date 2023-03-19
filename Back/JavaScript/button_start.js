@@ -1,7 +1,19 @@
- // Funkcja uruchamiająca animację po kliknięciu przycisku
-function startAnimationAndRedirect() {
-  document.getElementById("block_left").style.animationPlayState = "running";
-  document.getElementById("block_right").style.animationPlayState = "running";
-  window.location.href = "../../Front/HTML_Templates/Sowa_require.html";
+ // Funkcja uruchamiająca animację i przekierowanie po kliknięciu przycisku
+ function startAnimationAndRedirect() {
+  var blockLeft = document.getElementById("block_left");
+  var blockRight = document.getElementById("block_right");
+  
+  blockLeft.addEventListener("animationend", redirect);
+  blockRight.addEventListener("animationend", redirect);
+  
+  blockLeft.style.animationPlayState = "running";
+  blockRight.style.animationPlayState = "running";
 }
-//  window.location.href = 'Carbo Race/Front/HTML_Templates/Sowa-require.html';
+
+function redirect() {
+  setTimeout(function() {
+    window.location.href = "Front/HTML_Templates/Sowa_require.html";
+  }, 2000);
+}
+
+
