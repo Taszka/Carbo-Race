@@ -1,2 +1,3 @@
 # Carbo-Race
-Here will stand a browser game in Cyberpunk vibe!
+Here will stand a browser game with Cyberpunk vibe!
+
