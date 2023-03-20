@@ -12,7 +12,7 @@
 
 function redirect() {
   setTimeout(function() {
-    window.location.href = "Front/HTML_Templates/Sowa_require.html";
+    window.location.href = "Front/HTML_Templates/menu_game_window.html";
   }, 2000);
 }
 
