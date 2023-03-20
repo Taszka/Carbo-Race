@@ -2,8 +2,8 @@
 <html>
 <head>
 <title>Game Prepare</title>
-<link rel="stylesheet" type="text/css" href="Front\CSS\First_Template\base_style.css">
-<link rel="stylesheet" type="text/css" href="Front\CSS\buttons\cyberpunk_button.css">
+<link rel="stylesheet" type="text/css" href="..\CSS\Templates\menu_start.css">
+<link rel="stylesheet" type="text/css" href="..\CSS\buttons\cyberpunk_button.css">
 <link rel="preconnect" href="https://fonts.gstatic.com"> 
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 <style>
@@ -13,11 +13,20 @@
 <div class="base">
     <div class="mid">
         <div class="game_window_background"></div>
-        <div class="centered">        
+        <div class="centered">
+            <div class="car_menu">
+                <div class="strip1">POJAZD1</div>
+                <div class="strip2">POJAZD2</div>
+                <div class="strip3">POJAZD3</div>
+            </div>
+
+
         </div>
     <div class="block_left" id="block_left"></div>
     <div class="block_right" id="block_right"></div>
     </div>
+    <script src="../../Back/JavaScript/Reloadanimation.js"></script>
+    <script>startReloadAnimation()</script>   
 </div>
 
 </body>

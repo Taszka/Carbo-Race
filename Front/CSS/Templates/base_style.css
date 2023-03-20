@@ -18,12 +18,12 @@ html, body {
     width: 50%;
     height: 100%;
     animation-name: example_left;
-    animation-duration: 3s;
+    animation-duration: 3.5s;
     animation-play-state: paused;
 }
 @keyframes example_left {
-    0%   { left:-100%; top:0px;}
-    100% { left:0px; top:0px;}
+    0%   { left:-100%; top:0px;opacity: 0;}
+    100% { left:0px; top:0px;opacity: 1;}
 }
 .block_right {
     background-image: url('../../Models/Layer/blankwall_right.jpg');
@@ -33,13 +33,13 @@ html, body {
     width: 50%;
     height: 100%;
     animation-name: example_right;
-    animation-duration: 3s;
+    animation-duration: 3.5s;
     animation-play-state: paused;
 
 }
 @keyframes example_right {
-  0%   { right:-100%; top:0px;}
-  100% { right:0px; top:0px;}
+  0%   { right:-100%; top:0px;opacity: 0;}
+  100% { right:0px; top:0px;opacity: 1;}
 }
 .mid {
     position: absolute;
