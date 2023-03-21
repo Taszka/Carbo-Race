@@ -88,7 +88,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 70%;
+  width: 80%;
   height: 90%;
 }
 
@@ -110,28 +110,54 @@ body {
 
 .strip_left {
   position: absolute;
-  right:60%;
+  top:25%;
+  left:10%;
   border-radius: 20px 20px 20px 20px;
   overflow: hidden;
-  width: 37%;
+  width: 17%;
+  height: 50%;  
+  box-shadow: 0px 0px 0px 3px rgb(0, 187, 255);
+  background-color: rgba(255, 255, 255, 1);
+  background-image: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(0, 0, 0, 1) 100%);
+}
+
+.strip_centrum {
+  position: absolute;
+  right:33%;
+  border-radius: 20px 20px 20px 20px;
+  overflow: hidden;
+  width: 34%;
   height: 100%;  
   box-shadow: 0px 0px 0px 3px rgb(0, 187, 255);
   background-color: rgba(255, 255, 255, 1);
   background-image: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(0, 0, 0, 1) 100%);
 }
+
 .strip_right {
   position: absolute;
-  left: 60%;
+  top:25%;
+  right: 10%;
   border-radius: 20px 20px 20px 20px;
   overflow: hidden;
-  width: 37%;
-  height: 100%;  
+  width: 17%;
+  height: 50%;  
   box-shadow: 0px 0px 0px 3px rgb(0, 191, 255);
   background-color: rgba(255, 255, 255, 1);
   background-image: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(0, 0, 0, 1) 100%);
 }
 
 .top_strip_left {
+  position: absolute;
+  background-image: url('../../Models/Layer/main_gate.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden;
+  width: 100%;
+  height: 30%;
+  box-shadow: 0px 0px 0px 3px rgb(0, 191, 255);
+}
+.top_strip_centrum {
   position: absolute;
   background-image: url('../../Models/Layer/car_player_1.jpg');
   background-size: cover;
@@ -162,6 +188,16 @@ body {
   height: 50%;
   text-align: center;
 }
+
+.under_strip_centrum {
+  position: absolute;
+  top:50%;
+  left:0%;
+  width: 100%;
+  height: 50%;
+  text-align: center;
+}
+
 .under_strip_right {
   position: absolute;
   top:50%;

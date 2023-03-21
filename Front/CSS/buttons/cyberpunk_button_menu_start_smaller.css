@@ -1,0 +1,33 @@
+button_smaller_left {
+    position: absolute;
+    text-align: center;
+    top:45%;
+    left: 0%;
+    width: 5%;
+    height: 10%;
+    font-size: 55px;
+    font-family: 'Bebas Neue', cursive;
+    background: linear-gradient(45deg, transparent 5%, #000000 5%);
+    border: 0;
+    color: #fff;
+    letter-spacing: 3px;
+    box-shadow: 6px 0px 0px #00E6F6;
+    text-shadow: -1px -1px 0px #F8F005, 1px 1px 0px #00E6F6;
+  }
+  button_smaller_right {
+    position: absolute;
+    text-align: center;
+    top:45%;
+    right: 0%;
+    width: 5%;
+    height: 10%;
+    font-size: 55px;
+    font-family: 'Bebas Neue', cursive;
+    background: linear-gradient(45deg, transparent 5%, #000000 5%);
+    border: 0;
+    color: #fff;
+    letter-spacing: 3px;
+    box-shadow: 6px 0px 0px #00E6F6;
+    text-shadow: -1px -1px 0px #F8F005, 1px 1px 0px #00E6F6;
+  }
+  

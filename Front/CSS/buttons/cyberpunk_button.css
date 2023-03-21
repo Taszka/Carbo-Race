@@ -10,6 +10,7 @@ button, button::after {
   line-height: 88px;
   box-shadow: 6px 0px 0px #00E6F6;
   outline: transparent;
+  text-shadow: -1px -1px 0px #F8F005, 1px 1px 0px #00E6F6;
 }
 
 button::after {
