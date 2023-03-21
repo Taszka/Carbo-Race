@@ -1,111 +1,176 @@
-html, body {
-    height: 100%;
-    margin: 0;
+html,
+body {
+  height: 100%;
+  margin: 0;
 }
 
 .base {
-    position: relative;
-    height: 100%;
-    background: yellow;
-    overflow: hidden;
+  position: relative;
+  height: 100%;
+  background: yellow;
+  overflow: hidden;
 }
+
 /* Definiujemy styl animacji */
 .block_left {
-    background-image: url('../../Models/Layer/blankwall_left.jpg');
-    position: absolute;
-    background-position: right;
-    width: 50%;
-    height: 100%;
-    animation-name: example_left;
-    animation-duration: 5s;
-    animation-play-state: paused;
+  background-image: url('../../Models/Layer/blankwall_left.jpg');
+  position: absolute;
+  background-size: cover;
+  background-position: right;
+  width: 50%;
+  height: 100%;
+  animation-name: example_left;
+  animation-duration: 5s;
+  animation-play-state: paused;
 }
+
 @keyframes example_left {
-  0%   { left:0px; top:0px; opacity: 1; }
-  100% { left:-100%; top:0px; opacity: 0; }
+  0% {
+    left: 0px;
+    top: 0px;
+    opacity: 1;
+  }
+
+  100% {
+    left: -100%;
+    top: 0px;
+    opacity: 0;
+  }
 }
+
 .block_right {
-    background-image: url('../../Models/Layer/blankwall_right.jpg');
-    background-position: left;
-    position: absolute;
-    width: 50%;
-    height: 100%;
-    animation-name: example_right;
-    animation-duration: 5s;
-    animation-play-state: paused;
+  background-image: url('../../Models/Layer/blankwall_right.jpg');
+  background-position: left;
+  background-size: cover;
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  animation-name: example_right;
+  animation-duration: 5s;
+  animation-play-state: paused;
 }
+
 @keyframes example_right {
-  0% { right:0px; top:0px; opacity: 1;}
-  100% { right:-100%; top:0px; opacity: 0;}
+  0% {
+    right: 0px;
+    top: 0px;
+    opacity: 1;
+  }
+
+  100% {
+    right: -100%;
+    top: 0px;
+    opacity: 0;
+  }
 }
+
 .mid {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    background-color: rgb(255, 255, 255);
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(59, 58, 58) 0px 0px 0px 3px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(59, 58, 58) 0px 0px 0px 3px;
 }
+
 .game_window_background {
-    background-image: url('../../Models/Layer/main.jpg');
-    background-attachment: fixed;
-    width: 3000px;
-    height: 100%;
-    float: left;
-    animation: slide 100s linear infinite;
+  background-image: url('../../Models/Layer/main.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  width: 3000px;
+  height: 100%;
+  float: left;
+  animation: slide 100s linear infinite;
 }
+
 .centered {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 90%;
+  width: 70%;
   height: 90%;
 }
+
 @keyframes slide {
   0% {
     transform: translate(0);
   }
+
   100% {
-    transform: translate(-1080px); /* The image width */
+    transform: translate(-1080px);
+    /* The image width */
   }
 }
 
 .car_menu {
-  border-radius: 20px 20px 20px 20px;
-  background-color: rgba(225, 103, 248, 1);
-  background-image: radial-gradient(circle, rgba(225, 103, 248, 1) 50%, rgba(41, 53, 86, 1) 100%);
   width: 100%;
   height: 100%;
-  -webkit-box-shadow: 0px 0px 0px 7px rgb(0, 0, 0);
-  -moz-box-shadow: 0px 0px 0px 7px rgb(0, 0, 0);
-  box-shadow: 0px 0px 0px 7px rgb(0, 0, 0);
+}
+
+.strip_left {
+  position: absolute;
+  right:60%;
+  border-radius: 20px 20px 20px 20px;
   overflow: hidden;
+  width: 37%;
+  height: 100%;  
+  box-shadow: 0px 0px 0px 3px rgb(0, 187, 255);
+  background-color: rgba(255, 255, 255, 1);
+  background-image: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(0, 0, 0, 1) 100%);
 }
-.strip1 {
-  float: left;
+.strip_right {
+  position: absolute;
+  left: 60%;
+  border-radius: 20px 20px 20px 20px;
+  overflow: hidden;
+  width: 37%;
+  height: 100%;  
+  box-shadow: 0px 0px 0px 3px rgb(0, 191, 255);
+  background-color: rgba(255, 255, 255, 1);
+  background-image: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(0, 0, 0, 1) 100%);
+}
+
+.top_strip_left {
+  position: absolute;
   background-image: url('../../Models/Layer/car_player_1.jpg');
-  background-size:contain;  
+  background-size: cover;
   background-repeat: no-repeat;
-  width: 32%;
-  height: 100%;
-  background-color: blue;
+  background-position: center;
+  overflow: hidden;
+  width: 100%;
+  height: 30%;
+  box-shadow: 0px 0px 0px 3px rgb(0, 191, 255);
 }
-.strip2 {
-  float: left;
+.top_strip_right {
+  position: absolute;
   background-image: url('../../Models/Layer/car_player_2.jpg');
-  background-size:contain;  
+  background-size: cover;
   background-repeat: no-repeat;
-  width: 36%;
-  height: 100%;
-  background-color: rgb(0, 255, 0);
+  background-position: center;
+  overflow: hidden;
+  width: 100%;
+  height: 30%;
+  box-shadow: 0px 0px 0px 3px rgb(0, 191, 255);
 }
-.strip3 {
-  float: left;
-  width: 32%;
-  height: 100%;
-  background-color: rgb(255, 0, 0);
+
+.under_strip_left {
+  position: absolute;
+  top:50%;
+  left:0%;
+  width: 100%;
+  height: 50%;
+  text-align: center;
 }
+.under_strip_right {
+  position: absolute;
+  top:50%;
+  left:0%;
+  width: 100%;
+  height: 50%;
+  text-align: center;
+}
+
 /*  -webkit-box-shadow: 0px 0px 100px 20px rgba(24, 184, 187, 1);
   -moz-box-shadow: 0px 0px 100px 20px rgba(24, 184, 187, 1);
   box-shadow: 0px 0px 100px 20px rgba(24, 184, 187, 1);

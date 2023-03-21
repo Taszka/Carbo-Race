@@ -1,7 +1,7 @@
 button, button::after {
   width: 380px;
   height: 150px;
-  font-size: 60px;
+  font-size: 4vw;
   font-family: 'Bebas Neue', cursive;
   background: linear-gradient(45deg, transparent 5%, #000000 5%);
   border: 0;
@@ -10,7 +10,6 @@ button, button::after {
   line-height: 88px;
   box-shadow: 6px 0px 0px #00E6F6;
   outline: transparent;
-  position: relative;
 }
 
 button::after {

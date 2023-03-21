@@ -13,6 +13,7 @@ html, body {
 .block_left {
     background-image: url('../../Models/Layer/blankwall_left.jpg');
     position: absolute;
+    background-size: cover;
     background-position: right;
     right: 1;
     width: 50%;
@@ -29,6 +30,7 @@ html, body {
     background-image: url('../../Models/Layer/blankwall_right.jpg');
     background-position: left;
     position: absolute;
+    background-size: cover;
     right: 0;
     width: 50%;
     height: 100%;
@@ -52,6 +54,7 @@ html, body {
 .game_window_background {
     background-image: url('../../Models/Layer/main.jpg');
     background-attachment: fixed;
+    background-size: cover;
     width: 3000px;
     height: 100%;
     float: left;
