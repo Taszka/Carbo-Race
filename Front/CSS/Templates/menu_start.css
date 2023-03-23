@@ -190,6 +190,10 @@ body {
 }
 
 .under_strip_centrum {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   top:50%;
   left:0%;
