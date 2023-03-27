@@ -3,6 +3,7 @@
 <head>
 <title>Game Prepare</title>
 <link rel="stylesheet" type="text/css" href="..\CSS\Templates\menu_start.css">
+<link rel="stylesheet" type="text/css" href="..\CSS\animations\menu_start_animations.css">
 <link rel="stylesheet" type="text/css" href="..\CSS\buttons\cyberpunk_button_menu_start.css">
 <link rel="stylesheet" type="text/css" href="..\CSS\buttons\cyberpunk_button_menu_start_smaller.css">
 <link rel="preconnect" href="https://fonts.gstatic.com"> 
@@ -15,17 +16,17 @@
     <div class="mid">
         <div class="game_window_background"></div>
         <div class="centered">
-            <div class ="button_smaller_left" onclick="funcion()"><</div>
-            <div class ="button_smaller_right" onclick="funcion()">></div>
+            <div class ="button_smaller_left" onclick="ChangeCar_left()" ><</div>
+            <div class ="button_smaller_right" onclick="ChangeCar_right()">></div>
             <div class="car_menu">
-                <div class="strip_left">
+                <div class="strip_left" id="strip_left">
                     <div class="top_strip_left"></div>
                     <div class="under_strip_left">
                         <div class="under_strip_left">
                         </div>
                     </div>
                 </div>
-                <div class="strip_centrum">
+                <div class="strip_centrum" id="strip_centrum">
                     <div class="top_strip_centrum"></div>
                     <div class="under_strip_centrum">
                         <div class="under_strip_centrum">
@@ -33,7 +34,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="strip_right">
+                <div class="strip_right" id="strip_right">
                     <div class="top_strip_right"></div>
                     <div class="under_strip_right">
                         <div class="under_strip_right">
@@ -46,7 +47,9 @@
     <div class="block_right" id="block_right"></div>
     </div>
     <script src="../../Back/JavaScript/Reloadanimation.js"></script>
+    <script src="../../Back/JavaScript/change_car_button.js"></script>
     <script>startReloadAnimation()</script>   
+
 </div>
 
 </body>

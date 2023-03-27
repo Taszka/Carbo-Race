@@ -3,6 +3,7 @@ body {
   height: 100%;
   margin: 0;
 }
+@import url(../animations/menu_start_animations.css);
 
 .base {
   position: relative;
@@ -119,6 +120,8 @@ body {
   box-shadow: 0px 0px 0px 3px rgb(0, 187, 255);
   background-color: rgba(255, 255, 255, 1);
   background-image: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(0, 0, 0, 1) 100%);
+  animation: run_strip_left 1s forwards;
+  animation-play-state: paused;
 }
 
 .strip_centrum {
@@ -131,6 +134,8 @@ body {
   box-shadow: 0px 0px 0px 3px rgb(0, 187, 255);
   background-color: rgba(255, 255, 255, 1);
   background-image: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(0, 0, 0, 1) 100%);
+  animation: run_strip_centrum 1s forwards;
+  animation-play-state: paused;
 }
 
 .strip_right {
@@ -144,6 +149,8 @@ body {
   box-shadow: 0px 0px 0px 3px rgb(0, 191, 255);
   background-color: rgba(255, 255, 255, 1);
   background-image: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(0, 0, 0, 1) 100%);
+  animation: run_strip_right 1s forwards;
+  animation-play-state: paused;
 }
 
 .top_strip_left {
@@ -210,7 +217,3 @@ body {
   height: 50%;
   text-align: center;
 }
-
-/*  -webkit-box-shadow: 0px 0px 100px 20px rgba(24, 184, 187, 1);
-  -moz-box-shadow: 0px 0px 100px 20px rgba(24, 184, 187, 1);
-  box-shadow: 0px 0px 100px 20px rgba(24, 184, 187, 1);

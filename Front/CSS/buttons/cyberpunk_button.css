@@ -46,7 +46,7 @@
 @keyframes glitch {
   0% {
     clip-path: var(--slice-1);
-    transform: translate(-20px, -10px);
+    transform: translate(-20px, -10px); /*380poziom 150pion*/ /*20=10% 10=10% 5=10%*/
   }
   10% {
     clip-path: var(--slice-3);

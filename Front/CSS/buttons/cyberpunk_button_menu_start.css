@@ -8,7 +8,7 @@
     text-align: center;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(45deg, transparent 5%, #000000 5%);
+    background: linear-gradient(45deg, transparent 10%, #000000 10%);
     border: 0;
     color: #fff;
     letter-spacing: 3px;
@@ -20,11 +20,11 @@
   
   .button_cyberpunk_menu::after {
     --slice-0: inset(50% 50% 50% 50%);
-    --slice-1: inset(80% -5px 0 0);
-    --slice-2: inset(50% -5px 30% 0);
-    --slice-3: inset(10% -5px 85% 0);
-    --slice-4: inset(40% -5px 43% 0);
-    --slice-5: inset(80% -5px 5% 0);
+    --slice-1: inset(80% -10% 0 0);
+    --slice-2: inset(50% -10% 30% 0);
+    --slice-3: inset(10% -10% 81% 0);
+    --slice-4: inset(40% -10% 43% 0);
+    --slice-5: inset(80% -10% 10% 0);
     
     content: 'WIN YOUR CARB';
     display: block;
@@ -33,48 +33,59 @@
     left: 12%;
     right: 0;
     bottom: 0;
-    background: linear-gradient(45deg, transparent 3%, #00E6F6 3%, #00E6F6 5%, #000000 5%);
+    background: linear-gradient(45deg, transparent 3%, #00E6F6 3%, #00E6F6 10%, #000000 10%);
     text-shadow: -3px -3px 0px #F8F005, 3px 3px 0px #00E6F6;
     clip-path: var(--slice-0);
   }
   
 .button_cyberpunk_menu:hover::after {
-  animation: 1s glitch;
-  animation-timing-function: steps(3, end);
+  animation: 0.9s glitch;
+  animation-timing-function: steps(2, end);
 }
   
 @keyframes glitch {
   0% {
     clip-path: var(--slice-1);
+    transform: translate(-20px, 5%px); /*380poziom 150pion*/ /*20=10% 10=10% 5=10%*/
   }
   10% {
     clip-path: var(--slice-3);
+    transform: translate(10px, 6%);
   }
   20% {
     clip-path: var(--slice-1);
+    transform: translate(-10px, 7%);
   }
   30% {
     clip-path: var(--slice-3);
+    transform: translate(0px, 8%);
   }
   40% {
     clip-path: var(--slice-2);
+    transform: translate(-5px, 9%);
   }
   50% {
     clip-path: var(--slice-3);
+    transform: translate(5px, 10%);
   }
   60% {
     clip-path: var(--slice-4);
+    transform: translate(5px, 11%);
   }
   70% {
     clip-path: var(--slice-2);
+    transform: translate(-10px, 11%);
   }
   80% {
     clip-path: var(--slice-5);
+    transform: translate(20px, 11%);
   }
   90% {
     clip-path: var(--slice-1);
+    transform: translate(-10px, 11%);
   }
   100% {
     clip-path: var(--slice-1);
+    transform: translate(0);
   }
 }

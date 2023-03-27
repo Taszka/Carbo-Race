@@ -1,0 +1,15 @@
+@import url(../Templates/menu_start.css);
+
+
+@keyframes run_strip_left {
+    0%   { }
+    100% {  left: 73%;}
+}
+@keyframes run_strip_centrum {
+    0%   { }
+    100% {  top: 25%; right: 73%; height: 50%; width: 17%;}
+}
+@keyframes run_strip_right {
+    0%   { }
+    100% {  top:0%; right: 33.3%; height:100%; width: 34%;}
+}
